@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HiCO Hawaiian Bootstrap</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Pirata+One&display=swap" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="announcement text-center py-3 py-md-4">
+      <div class="announcement-title">NEW MENU!</div>
+      <a class="text-dark text-decoration-none" href="#locations">VISIT OUR MENU PAGE HERE</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero text-white d-flex flex-column" aria-label="HiCO Hawaiian Coffee">
+      <nav class="navbar navbar-dark px-4 px-md-5 py-4">
+        <div class="container-fluid position-relative p-0">
+          <button class="navbar-toggler border-0 shadow-none p-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#mainMenu" aria-controls="mainMenu" aria-label="Open menu">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand logo position-absolute top-50 start-50 translate-middle m-0" href="#">HiCO</a>
+          <div class="ms-auto d-flex align-items-center gap-3">
+            <a href="#" class="text-white" aria-label="Account">
+              <svg width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="7" r="4"/><path d="M4 21v-2a8 8 0 0 1 16 0v2z"/></svg>
+            </a>
+            <a href="#" class="text-white" aria-label="Cart">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h3l3 15h14l2-11H5"/></svg>
+            </a>
+          </div>
+        </div>
+      </nav>
+
+      <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="mainMenu" aria-labelledby="menuTitle">
+        <div class="offcanvas-header">
+          <h2 class="offcanvas-title logo fs-1" id="menuTitle">HiCO</h2>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close menu"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="nav flex-column fs-5 gap-3">
+            <li class="nav-item"><a class="nav-link text-white" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="#locations">Locations &amp; Menus</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="#">HiCO Products</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="#">Community &amp; Culture</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="#">Order Online</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="container text-center mt-auto mb-5 pb-4 pb-md-5">
+        <h1 class="display-1 hero-heading mb-3">100% Hawaiian Coffee</h1>
+        <p class="hero-tagline fw-semibold text-uppercase mb-4">Be humble. Be aware. And don't be afraid to make some waves.</p>
+        <a href="#locations" class="btn btn-outline-light rounded-0 px-4 py-2 hero-button">Order Online</a>
+      </div>
+    </section>
+
+    <section class="container-fluid text-center py-5 px-4 px-lg-5" id="locations">
+      <h2 class="section-heading display-4 mb-5">Big Island Hawaii Locations</h2>
+      <div class="row g-5">
+        <article class="col-12 col-md-4 d-flex flex-column align-items-center">
+          <div class="pin mb-4" aria-hidden="true">●</div>
+          <h3 class="location-heading mb-3">Kailua-Kona, HI</h3>
+          <p class="location-description mb-4">Our flagship café — the heart of HiCO. Grab your favorite drink, connect with free wifi or try our famous loaded spam musubi.</p>
+          <a class="btn btn-dark px-4 py-2 mt-auto menu-button" href="#">View Menu</a>
+          <a class="text-dark text-decoration-underline mt-2" href="#">DIRECTIONS</a>
+        </article>
+        <article class="col-12 col-md-4 d-flex flex-column align-items-center">
+          <div class="pin mb-4" aria-hidden="true">●</div>
+          <h3 class="location-heading mb-3">Kealakekua, HI</h3>
+          <p class="location-description mb-4">A cozy, creative hub with a drive-thru and a small-town vibe. Sip, slow down, and connect with free wifi at our South Kona location.</p>
+          <a class="btn btn-dark px-4 py-2 mt-auto menu-button" href="#">View Menu</a>
+          <a class="text-dark text-decoration-underline mt-2" href="#">DIRECTIONS</a>
+        </article>
+        <article class="col-12 col-md-4 d-flex flex-column align-items-center">
+          <div class="pin mb-4" aria-hidden="true">●</div>
+          <h3 class="location-heading mb-3">Waikoloa Village</h3>
+          <p class="location-description mb-4">Heading north of Kona? This is your stop! Friendly faces, acai bowls, and free wifi—perfect for pre-beach or mid-day fuel-ups.</p>
+          <a class="btn btn-dark px-4 py-2 mt-auto menu-button" href="#">View Menu</a>
+          <a class="text-dark text-decoration-underline mt-2" href="#">DIRECTIONS</a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

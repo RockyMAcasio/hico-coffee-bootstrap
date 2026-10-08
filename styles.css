@@ -1,0 +1,26 @@
+.announcement { min-height: 120px; }
+.announcement-title, .logo, .hero-heading, .hero-button, .section-heading, .location-heading, .menu-button {
+  font-family: "Pirata One", Georgia, serif;
+}
+.announcement-title { font-size: 2rem; }
+.announcement a { font-size: 1rem; letter-spacing: .02em; }
+.hero {
+  min-height: 700px;
+  height: calc(100vh - 120px);
+  max-height: 1050px;
+  background: linear-gradient(rgba(0,0,0,.56), rgba(0,0,0,.62)), url("hico-hero.png") center center / cover no-repeat;
+}
+.logo { font-size: clamp(3.5rem, 6vw, 6rem); line-height: 1; }
+.hero-heading { font-size: clamp(3rem, 6vw, 6.5rem); }
+.hero-tagline { letter-spacing: .19em; font-size: clamp(.85rem, 1.4vw, 1.3rem); }
+.hero-button, .menu-button { font-size: 1.35rem; text-transform: uppercase; }
+.section-heading { color: #101010; }
+.location-heading { font-size: 2.1rem; }
+.location-description { color: #666; font-size: 1.05rem; max-width: 440px; }
+.pin { color: #000; font-size: 2rem; line-height: 1; position: relative; height: 45px; }
+.pin::after { content: ""; position: absolute; width: 3px; height: 29px; background: #000; left: 50%; top: 23px; transform: translateX(-50%); border-radius: 3px; }
+@media (max-width: 767px) {
+  .hero { min-height: 620px; height: calc(100svh - 120px); }
+  .logo { font-size: 3.4rem; }
+  .hero-tagline { letter-spacing: .08em; }
+}
